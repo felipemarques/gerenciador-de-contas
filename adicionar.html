@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Início</title>
+
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/contas-theme.css">
+
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Gerenciador de contas</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contas <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="parcelas.html">Ver Parcelas</a></li>
+                                <li><a href="adicionar.html">Nova Conta</a></li>
+                                <li><a href="contas.html">Ver Todas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Usuários</a></li> 
+                        <li><a href="#">Tipos</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfil <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Editar</a></li>
+                                <li><a href="#">Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Adicionar nova conta</h1>
+                <p>Preencha abaixo os dados do formulário.</p>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="col-sm-2"></div>
+            
+            <div class="col-sm-8">                
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="nomeConta" class="col-sm-3 control-label">Nome da conta:</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="nomeConta" placeholder="Nome da conta  ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoConta" class="col-sm-3 control-label">Tipo:</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="tipoConta">
+                                <option>--</option>
+                                <option>Mensal</option>
+                                <option>Parcelada</option>
+                                <option>Única</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="qtdeParcelas" class="col-sm-3 control-label">Quantidade de Parcelas:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="qtdParcelas" placeholder="Quantas parcelas são?">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="diaVencimento" class="col-sm-3 control-label">Dia de vencimento:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="qtdParcelas" placeholder="Que dia vence?">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox col-sm-12">
+                            <label for="diaVencimento" class="col-sm-3 control-label"></label>
+                            <label>
+                                <input type="checkbox"> Vence no mês atual?
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success center-block">Adicionar</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
