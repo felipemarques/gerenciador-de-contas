@@ -7,7 +7,9 @@
  **/
 set_include_path('core/');
 require_once('config/config.php');
-require_once('db/Db.php');
+require_once('lib/Log.php');
+require_once('lib/Db.php');
+require_once('lib/Form.php');
 
 
 ?>
